@@ -1,6 +1,6 @@
 import dash_html_components as html
 import callbacks
-from app import app, server
+from app import app
 from page import body
 from sidebar import sidebar
 
