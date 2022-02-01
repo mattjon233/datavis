@@ -1,1 +1,1 @@
-web: gunicorn index:app --preload
+web: gunicorn --log-level=debug --bind index:app
