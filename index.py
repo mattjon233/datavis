@@ -10,4 +10,4 @@ app.layout = html.Div(className='row wrapper', children=[sidebar, body])
 if __name__ == '__main__':
 
     # Necessary to run the Dash program
-    app.run_server(host='0.0.0.0', port=8889, debug=True)
+    app.run_server(debug=True)
