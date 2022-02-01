@@ -1,1 +1,1 @@
-web: gunicorn --log-level debug --bind 0.0.0.0:30443 app:server
+web: gunicorn app:server
