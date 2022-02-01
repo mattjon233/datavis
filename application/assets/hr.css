@@ -1,0 +1,12 @@
+/* https://www.w3schools.com/cssref/pr_border-style.asp */
+
+hr.in_page_properties {
+    width: 63rem;
+    align: center;
+    border-width: 3px;
+    /* border-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit; */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: auto;
+}   
