@@ -13,7 +13,7 @@ body = html.Div(
                 dbc.Col(id='div-main',
                     children=[
                         html.Iframe(src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+dashboard',
-                                    style={"height": "450px", "width": "100%"})
+                                    style={"height": "435px", "width": "100%"})
                     ]
                 )
             ]
