@@ -14,16 +14,48 @@ sidebar = html.Div(
 
                 html.P(),
                 html.P(),
+            
+                html.Button('Página Inicial', id='initial-page-button'),
 
-                # Categories and options
+                html.P(),
 
-                html.H6(children='TIPO DE GRÁFICO:', id='title-type'),
+                html.H6(children='VISUALIZAÇÃO', id='title-vis'),
                 dcc.Dropdown(
-                    id='dd-type',
-                    options=[{'label': i, 'value': i} for i in ['SPI', 'PRECIPITAÇÃO']],
-                    value='SPI',
+                    id='dd-vis',
+                    options=[
+                        {'label': 'Precipitação', 'value': 'prec'},
+                        {'label': 'SPI', 'value': 'spi'},
+                    ],
+                    # value='prec',
                     style={'display': '', 'width':'12rem'},
                     clearable=False
+                ),
+
+                html.P(),
+
+                # CASO : PRECIPITAÇÃO
+                html.H6(children='TIPO', id='title-type', style={'display':'none'}),
+                dcc.RadioItems(
+                    id='radio-type-prec',
+                    options=[
+                        {'label': ' Mapa', 'value': 'map'},
+                        {'label': ' Por IDH', 'value': 'idh'},
+                    ],
+                    # value='map',
+                    labelStyle={'display': 'block'},
+                    style={'display':'none'}
+                ),
+
+                # CASO : SPI
+                dcc.RadioItems(
+                    id='radio-type-spi',
+                    options=[
+                        {'label': ' Linhas', 'value': 'lines'},
+                        {'label': ' Mapa', 'value': 'map'},
+                    ],
+                    # value='lines',
+                    labelStyle={'display': 'block'},
+                    style={'display':'none'}
                 )
             ]
         )
