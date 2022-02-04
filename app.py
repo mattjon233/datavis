@@ -43,6 +43,7 @@ def initial_page(click):
    # page styles
    [Output('initial-page', 'style'),
    Output('precip-map', 'style'),
+   Output('precip-lines', 'style'),
    Output('idh', 'style'),
    Output('spi-lines', 'style'),
    Output('spi-map', 'style'),
@@ -65,31 +66,35 @@ def page_type_style(click, vis, type_prec, type_spi):
    if vis == 'prec':
       if type_prec == 'map':
          map_dict = {'height': '710px', 'width': '65%'}
-         return [none,map_dict,none,none,none,
+         return [none,map_dict,none,none,none,none,
                  block, none, default]
+      elif type_prec == 'lines':
+         lines_dict = {'height': '435px', 'width': '80%'}
+         return [none,none,lines_dict,none,none,none,
+                 block, none, default]         
       elif type_prec == 'idh':
          idh_dict = {'height': '550px', 'width': '40%'}
-         return [none,none,idh_dict,none,none,
+         return [none,none,none,idh_dict,none,none,
                  block, none, default]
       else:
-         return [initial_dict,none,none,none,none,
+         return [none,none,none,none,none,none,
                  block, none, default]
 
    elif vis == 'spi':
       if type_spi == 'lines':
          lines_dict = {'height': '435px', 'width': '80%'}
-         return [none,none,none,lines_dict,none,
+         return [none,none,none,none,lines_dict,none,
                  none, block, default]
       elif type_spi == 'map':
          map_dict = {'height': '710px', 'width': '65%'}
-         return [none,none,none,none,map_dict,
+         return [none,none,none,none,none,map_dict,
                   none, block, default]
       else:
-         return [initial_dict,none,none,none,none,
+         return [none,none,none,none,none,none,
                   none, block, default]
 
    else:
-      return [initial_dict,none,none,none,none, 
+      return [initial_dict,none,none,none,none,none, 
                none,none,none]
 
 # Main
