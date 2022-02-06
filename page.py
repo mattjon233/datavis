@@ -71,7 +71,7 @@ body = html.Div(
         ),
 
         html.Iframe(id='precip-map',
-                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precipMapGeoJson',
+                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+selectprecip%2Cviewof+selectcolorprecip%2CprecipMapGeoJson',
                     style={'display':'none'}),
 
         html.Iframe(id='precip-lines',
@@ -82,12 +82,16 @@ body = html.Div(
                     src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precip',
                     style={'display':'none'}),
 
+        html.Iframe(id='municipios',
+                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precipBar',
+                    style={'display':'none'}),
+
         html.Iframe(id='spi-lines',
                     src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+dashboard',
                     style={'display':'none'}),
 
         html.Iframe(id='spi-map',
-                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=spiMapGeoJson',
+                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+selectspi%2Cviewof+selectcolorspi%2CspiMapGeoJson',
                     style={'display':'none'})
 
     ],

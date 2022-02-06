@@ -40,7 +40,8 @@ sidebar = html.Div(
                     options=[
                         {'label': ' Mapa', 'value': 'map'},
                         {'label': ' Por IDH', 'value': 'idh'},
-                        {'label': ' Linhas', 'value':'lines'}
+                        {'label': ' Linhas', 'value':'lines'},
+                        {'label': ' Por Municípios', 'value':'municipios'}
                     ],
                     # value='map',
                     labelStyle={'display': 'block'},
