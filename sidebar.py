@@ -40,8 +40,8 @@ sidebar = html.Div(
                     options=[
                         {'label': ' Mapa', 'value': 'map'},
                         {'label': ' Por IDH', 'value': 'idh'},
-                        {'label': ' Linhas', 'value':'lines'},
-                        {'label': ' Por Municípios', 'value':'municipios'}
+                        {'label': ' Período Completo', 'value':'lines'},
+                        # {'label': ' Por Municípios', 'value':'municipios'}
                     ],
                     # value='map',
                     labelStyle={'display': 'block'},
@@ -52,7 +52,7 @@ sidebar = html.Div(
                 dcc.RadioItems(
                     id='radio-type-spi',
                     options=[
-                        {'label': ' Linhas', 'value': 'lines'},
+                        {'label': ' Período Completo', 'value': 'lines'},
                         {'label': ' Mapa', 'value': 'map'},
                     ],
                     # value='lines',

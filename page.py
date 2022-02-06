@@ -67,11 +67,11 @@ body = html.Div(
                     href='https://clima.inmet.gov.br'
                 )
             ],
-            style={'padding-left':'100px'}
+            style={'padding-left':'150px'}
         ),
 
         html.Iframe(id='precip-map',
-                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+selectprecip%2Cviewof+selectcolorprecip%2CprecipMapGeoJson',
+                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precipMapGeoJson%2Cviewof+selectcolorprecip%2Cviewof+selectprecip%2CprecipBar',
                     style={'display':'none'}),
 
         html.Iframe(id='precip-lines',
@@ -82,16 +82,16 @@ body = html.Div(
                     src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precip',
                     style={'display':'none'}),
 
-        html.Iframe(id='municipios',
-                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precipBar',
-                    style={'display':'none'}),
+        # html.Iframe(id='municipios',
+        #             src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precipBar',
+        #             style={'display':'none'}),
 
         html.Iframe(id='spi-lines',
                     src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+dashboard',
                     style={'display':'none'}),
 
         html.Iframe(id='spi-map',
-                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+selectspi%2Cviewof+selectcolorspi%2CspiMapGeoJson',
+                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+selectcolorspi%2Cviewof+selectspi%2CspiMapGeoJson%2CspiBar',
                     style={'display':'none'})
 
     ],
