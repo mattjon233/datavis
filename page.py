@@ -82,9 +82,9 @@ body = html.Div(
                     src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precip',
                     style={'display':'none'}),
 
-        # html.Iframe(id='municipios',
-        #             src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precipBar',
-        #             style={'display':'none'}),
+        html.Iframe(id='pib',
+                    src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=precipRenda',
+                    style={'display':'none'}),
 
         html.Iframe(id='spi-lines',
                     src='https://observablehq.com/embed/@mattjon233/projeto-final-datavis?cells=viewof+dashboard',

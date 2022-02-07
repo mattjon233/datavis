@@ -39,9 +39,9 @@ sidebar = html.Div(
                     id='radio-type-prec',
                     options=[
                         {'label': ' Mapa', 'value': 'map'},
-                        {'label': ' Por IDH', 'value': 'idh'},
                         {'label': ' Período Completo', 'value':'lines'},
-                        # {'label': ' Por Municípios', 'value':'municipios'}
+                        {'label': ' Por IDH', 'value': 'idh'},
+                        {'label': ' Por PIB per Capita', 'value':'pib'}
                     ],
                     # value='map',
                     labelStyle={'display': 'block'},
